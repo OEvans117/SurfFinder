@@ -28,7 +28,7 @@ namespace SurfFinderAPI.Controllers
 
         [RequestFormLimits(ValueLengthLimit = int.MaxValue, MultipartBodyLengthLimit = int.MaxValue)]
         [HttpPost("UploadFile")]
-        public IActionResult UploadFile([FromForm] IFormFile file)
+        public IActionResult UploadFile()
         {
             var RequestBundle = Request.Form.Files[0];
             List<IRequest> RequestList = new List<IRequest>();
