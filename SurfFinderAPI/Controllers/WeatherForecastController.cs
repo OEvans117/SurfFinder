@@ -23,7 +23,7 @@ namespace SurfFinderAPI.Controllers
         [HttpGet(Name = "GetWeatherForecast")]
         public string Get()
         {
-            return "xd";
+            return "xd1";
         }
 
         [HttpPost("UploadFile")]
